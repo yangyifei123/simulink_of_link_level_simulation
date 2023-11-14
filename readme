@@ -1,2 +1,4 @@
 the file is for simulink of 5G NR simulation
-
+Please use MATLAB 2022a
+【simulink_testfiled.mlx】is initial of 【tx2.slx】, which is needed to run before running simulink
+【final_test_par.mlx】is for 【rx2.slx】,just click RUN, matlab will running script and simulink automatically

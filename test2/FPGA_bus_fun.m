@@ -1,0 +1,2876 @@
+function FPGA_bus_fun() 
+% FPGA_BUS_FUN initializes a set of bus objects in the MATLAB base workspace 
+
+% Bus object: BUSOFDM1 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'L1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'L2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'L3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'L4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'L5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'L6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'L7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'L8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+BUSOFDM1 = Simulink.Bus;
+BUSOFDM1.HeaderFile = '';
+BUSOFDM1.Description = '';
+BUSOFDM1.DataScope = 'Auto';
+BUSOFDM1.Alignment = -1;
+BUSOFDM1.PreserveElementDimensions = 0;
+BUSOFDM1.Elements = elems;
+clear elems;
+assignin('base','BUSOFDM1', BUSOFDM1);
+
+% Bus object: BUSOFDM10 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'L1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'L2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'L3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'L4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'L5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'L6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'L7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'L8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+BUSOFDM10 = Simulink.Bus;
+BUSOFDM10.HeaderFile = '';
+BUSOFDM10.Description = '';
+BUSOFDM10.DataScope = 'Auto';
+BUSOFDM10.Alignment = -1;
+BUSOFDM10.PreserveElementDimensions = 0;
+BUSOFDM10.Elements = elems;
+clear elems;
+assignin('base','BUSOFDM10', BUSOFDM10);
+
+% Bus object: BUSOFDM11 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'L1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'L2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'L3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'L4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'L5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'L6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'L7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'L8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+BUSOFDM11 = Simulink.Bus;
+BUSOFDM11.HeaderFile = '';
+BUSOFDM11.Description = '';
+BUSOFDM11.DataScope = 'Auto';
+BUSOFDM11.Alignment = -1;
+BUSOFDM11.PreserveElementDimensions = 0;
+BUSOFDM11.Elements = elems;
+clear elems;
+assignin('base','BUSOFDM11', BUSOFDM11);
+
+% Bus object: BUSOFDM12 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'L1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'L2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'L3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'L4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'L5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'L6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'L7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'L8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+BUSOFDM12 = Simulink.Bus;
+BUSOFDM12.HeaderFile = '';
+BUSOFDM12.Description = '';
+BUSOFDM12.DataScope = 'Auto';
+BUSOFDM12.Alignment = -1;
+BUSOFDM12.PreserveElementDimensions = 0;
+BUSOFDM12.Elements = elems;
+clear elems;
+assignin('base','BUSOFDM12', BUSOFDM12);
+
+% Bus object: BUSOFDM13 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'L1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'L2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'L3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'L4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'L5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'L6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'L7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'L8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+BUSOFDM13 = Simulink.Bus;
+BUSOFDM13.HeaderFile = '';
+BUSOFDM13.Description = '';
+BUSOFDM13.DataScope = 'Auto';
+BUSOFDM13.Alignment = -1;
+BUSOFDM13.PreserveElementDimensions = 0;
+BUSOFDM13.Elements = elems;
+clear elems;
+assignin('base','BUSOFDM13', BUSOFDM13);
+
+% Bus object: BUSOFDM14 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'L1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'L2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'L3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'L4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'L5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'L6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'L7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'L8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+BUSOFDM14 = Simulink.Bus;
+BUSOFDM14.HeaderFile = '';
+BUSOFDM14.Description = '';
+BUSOFDM14.DataScope = 'Auto';
+BUSOFDM14.Alignment = -1;
+BUSOFDM14.PreserveElementDimensions = 0;
+BUSOFDM14.Elements = elems;
+clear elems;
+assignin('base','BUSOFDM14', BUSOFDM14);
+
+% Bus object: BUSOFDM2 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'L1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'L2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'L3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'L4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'L5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'L6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'L7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'L8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+BUSOFDM2 = Simulink.Bus;
+BUSOFDM2.HeaderFile = '';
+BUSOFDM2.Description = '';
+BUSOFDM2.DataScope = 'Auto';
+BUSOFDM2.Alignment = -1;
+BUSOFDM2.PreserveElementDimensions = 0;
+BUSOFDM2.Elements = elems;
+clear elems;
+assignin('base','BUSOFDM2', BUSOFDM2);
+
+% Bus object: BUSOFDM3 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'L1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'L2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'L3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'L4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'L5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'L6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'L7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'L8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+BUSOFDM3 = Simulink.Bus;
+BUSOFDM3.HeaderFile = '';
+BUSOFDM3.Description = '';
+BUSOFDM3.DataScope = 'Auto';
+BUSOFDM3.Alignment = -1;
+BUSOFDM3.PreserveElementDimensions = 0;
+BUSOFDM3.Elements = elems;
+clear elems;
+assignin('base','BUSOFDM3', BUSOFDM3);
+
+% Bus object: BUSOFDM4 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'L1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'L2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'L3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'L4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'L5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'L6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'L7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'L8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+BUSOFDM4 = Simulink.Bus;
+BUSOFDM4.HeaderFile = '';
+BUSOFDM4.Description = '';
+BUSOFDM4.DataScope = 'Auto';
+BUSOFDM4.Alignment = -1;
+BUSOFDM4.PreserveElementDimensions = 0;
+BUSOFDM4.Elements = elems;
+clear elems;
+assignin('base','BUSOFDM4', BUSOFDM4);
+
+% Bus object: BUSOFDM5 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'L1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'L2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'L3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'L4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'L5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'L6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'L7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'L8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+BUSOFDM5 = Simulink.Bus;
+BUSOFDM5.HeaderFile = '';
+BUSOFDM5.Description = '';
+BUSOFDM5.DataScope = 'Auto';
+BUSOFDM5.Alignment = -1;
+BUSOFDM5.PreserveElementDimensions = 0;
+BUSOFDM5.Elements = elems;
+clear elems;
+assignin('base','BUSOFDM5', BUSOFDM5);
+
+% Bus object: BUSOFDM6 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'L1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'L2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'L3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'L4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'L5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'L6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'L7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'L8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+BUSOFDM6 = Simulink.Bus;
+BUSOFDM6.HeaderFile = '';
+BUSOFDM6.Description = '';
+BUSOFDM6.DataScope = 'Auto';
+BUSOFDM6.Alignment = -1;
+BUSOFDM6.PreserveElementDimensions = 0;
+BUSOFDM6.Elements = elems;
+clear elems;
+assignin('base','BUSOFDM6', BUSOFDM6);
+
+% Bus object: BUSOFDM7 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'L1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'L2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'L3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'L4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'L5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'L6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'L7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'L8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+BUSOFDM7 = Simulink.Bus;
+BUSOFDM7.HeaderFile = '';
+BUSOFDM7.Description = '';
+BUSOFDM7.DataScope = 'Auto';
+BUSOFDM7.Alignment = -1;
+BUSOFDM7.PreserveElementDimensions = 0;
+BUSOFDM7.Elements = elems;
+clear elems;
+assignin('base','BUSOFDM7', BUSOFDM7);
+
+% Bus object: BUSOFDM8 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'L1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'L2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'L3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'L4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'L5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'L6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'L7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'L8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+BUSOFDM8 = Simulink.Bus;
+BUSOFDM8.HeaderFile = '';
+BUSOFDM8.Description = '';
+BUSOFDM8.DataScope = 'Auto';
+BUSOFDM8.Alignment = -1;
+BUSOFDM8.PreserveElementDimensions = 0;
+BUSOFDM8.Elements = elems;
+clear elems;
+assignin('base','BUSOFDM8', BUSOFDM8);
+
+% Bus object: BUSOFDM9 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'L1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'L2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'L3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'L4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'L5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'L6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'L7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'L8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+BUSOFDM9 = Simulink.Bus;
+BUSOFDM9.HeaderFile = '';
+BUSOFDM9.Description = '';
+BUSOFDM9.DataScope = 'Auto';
+BUSOFDM9.Alignment = -1;
+BUSOFDM9.PreserveElementDimensions = 0;
+BUSOFDM9.Elements = elems;
+clear elems;
+assignin('base','BUSOFDM9', BUSOFDM9);
+
+% Bus object: RX_BUSOFDM1 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'P1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'P2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'P3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'P4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'P5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'P6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'P7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'P8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+elems(9) = Simulink.BusElement;
+elems(9).Name = 'P9';
+elems(9).Dimensions = 1;
+elems(9).DimensionsMode = 'Fixed';
+elems(9).DataType = 'Bus: samplecontrol';
+elems(9).Complexity = 'real';
+elems(9).Min = [];
+elems(9).Max = [];
+elems(9).DocUnits = '';
+elems(9).Description = '';
+
+elems(10) = Simulink.BusElement;
+elems(10).Name = 'P10';
+elems(10).Dimensions = 1;
+elems(10).DimensionsMode = 'Fixed';
+elems(10).DataType = 'Bus: samplecontrol';
+elems(10).Complexity = 'real';
+elems(10).Min = [];
+elems(10).Max = [];
+elems(10).DocUnits = '';
+elems(10).Description = '';
+
+elems(11) = Simulink.BusElement;
+elems(11).Name = 'P11';
+elems(11).Dimensions = 1;
+elems(11).DimensionsMode = 'Fixed';
+elems(11).DataType = 'Bus: samplecontrol';
+elems(11).Complexity = 'real';
+elems(11).Min = [];
+elems(11).Max = [];
+elems(11).DocUnits = '';
+elems(11).Description = '';
+
+elems(12) = Simulink.BusElement;
+elems(12).Name = 'P12';
+elems(12).Dimensions = 1;
+elems(12).DimensionsMode = 'Fixed';
+elems(12).DataType = 'Bus: samplecontrol';
+elems(12).Complexity = 'real';
+elems(12).Min = [];
+elems(12).Max = [];
+elems(12).DocUnits = '';
+elems(12).Description = '';
+
+elems(13) = Simulink.BusElement;
+elems(13).Name = 'P13';
+elems(13).Dimensions = 1;
+elems(13).DimensionsMode = 'Fixed';
+elems(13).DataType = 'Bus: samplecontrol';
+elems(13).Complexity = 'real';
+elems(13).Min = [];
+elems(13).Max = [];
+elems(13).DocUnits = '';
+elems(13).Description = '';
+
+elems(14) = Simulink.BusElement;
+elems(14).Name = 'P14';
+elems(14).Dimensions = 1;
+elems(14).DimensionsMode = 'Fixed';
+elems(14).DataType = 'Bus: samplecontrol';
+elems(14).Complexity = 'real';
+elems(14).Min = [];
+elems(14).Max = [];
+elems(14).DocUnits = '';
+elems(14).Description = '';
+
+RX_BUSOFDM1 = Simulink.Bus;
+RX_BUSOFDM1.HeaderFile = '';
+RX_BUSOFDM1.Description = '';
+RX_BUSOFDM1.DataScope = 'Auto';
+RX_BUSOFDM1.Alignment = -1;
+RX_BUSOFDM1.PreserveElementDimensions = 0;
+RX_BUSOFDM1.Elements = elems;
+clear elems;
+assignin('base','RX_BUSOFDM1', RX_BUSOFDM1);
+
+% Bus object: RX_BUSOFDM2 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'P1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'P2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'P3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'P4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'P5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'P6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'P7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'P8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+elems(9) = Simulink.BusElement;
+elems(9).Name = 'P9';
+elems(9).Dimensions = 1;
+elems(9).DimensionsMode = 'Fixed';
+elems(9).DataType = 'Bus: samplecontrol';
+elems(9).Complexity = 'real';
+elems(9).Min = [];
+elems(9).Max = [];
+elems(9).DocUnits = '';
+elems(9).Description = '';
+
+elems(10) = Simulink.BusElement;
+elems(10).Name = 'P10';
+elems(10).Dimensions = 1;
+elems(10).DimensionsMode = 'Fixed';
+elems(10).DataType = 'Bus: samplecontrol';
+elems(10).Complexity = 'real';
+elems(10).Min = [];
+elems(10).Max = [];
+elems(10).DocUnits = '';
+elems(10).Description = '';
+
+elems(11) = Simulink.BusElement;
+elems(11).Name = 'P11';
+elems(11).Dimensions = 1;
+elems(11).DimensionsMode = 'Fixed';
+elems(11).DataType = 'Bus: samplecontrol';
+elems(11).Complexity = 'real';
+elems(11).Min = [];
+elems(11).Max = [];
+elems(11).DocUnits = '';
+elems(11).Description = '';
+
+elems(12) = Simulink.BusElement;
+elems(12).Name = 'P12';
+elems(12).Dimensions = 1;
+elems(12).DimensionsMode = 'Fixed';
+elems(12).DataType = 'Bus: samplecontrol';
+elems(12).Complexity = 'real';
+elems(12).Min = [];
+elems(12).Max = [];
+elems(12).DocUnits = '';
+elems(12).Description = '';
+
+elems(13) = Simulink.BusElement;
+elems(13).Name = 'P13';
+elems(13).Dimensions = 1;
+elems(13).DimensionsMode = 'Fixed';
+elems(13).DataType = 'Bus: samplecontrol';
+elems(13).Complexity = 'real';
+elems(13).Min = [];
+elems(13).Max = [];
+elems(13).DocUnits = '';
+elems(13).Description = '';
+
+elems(14) = Simulink.BusElement;
+elems(14).Name = 'P14';
+elems(14).Dimensions = 1;
+elems(14).DimensionsMode = 'Fixed';
+elems(14).DataType = 'Bus: samplecontrol';
+elems(14).Complexity = 'real';
+elems(14).Min = [];
+elems(14).Max = [];
+elems(14).DocUnits = '';
+elems(14).Description = '';
+
+RX_BUSOFDM2 = Simulink.Bus;
+RX_BUSOFDM2.HeaderFile = '';
+RX_BUSOFDM2.Description = '';
+RX_BUSOFDM2.DataScope = 'Auto';
+RX_BUSOFDM2.Alignment = -1;
+RX_BUSOFDM2.PreserveElementDimensions = 0;
+RX_BUSOFDM2.Elements = elems;
+clear elems;
+assignin('base','RX_BUSOFDM2', RX_BUSOFDM2);
+
+% Bus object: RX_BUSOFDM3 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'P1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'P2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'P3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'P4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'P5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'P6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'P7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'P8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+elems(9) = Simulink.BusElement;
+elems(9).Name = 'P9';
+elems(9).Dimensions = 1;
+elems(9).DimensionsMode = 'Fixed';
+elems(9).DataType = 'Bus: samplecontrol';
+elems(9).Complexity = 'real';
+elems(9).Min = [];
+elems(9).Max = [];
+elems(9).DocUnits = '';
+elems(9).Description = '';
+
+elems(10) = Simulink.BusElement;
+elems(10).Name = 'P10';
+elems(10).Dimensions = 1;
+elems(10).DimensionsMode = 'Fixed';
+elems(10).DataType = 'Bus: samplecontrol';
+elems(10).Complexity = 'real';
+elems(10).Min = [];
+elems(10).Max = [];
+elems(10).DocUnits = '';
+elems(10).Description = '';
+
+elems(11) = Simulink.BusElement;
+elems(11).Name = 'P11';
+elems(11).Dimensions = 1;
+elems(11).DimensionsMode = 'Fixed';
+elems(11).DataType = 'Bus: samplecontrol';
+elems(11).Complexity = 'real';
+elems(11).Min = [];
+elems(11).Max = [];
+elems(11).DocUnits = '';
+elems(11).Description = '';
+
+elems(12) = Simulink.BusElement;
+elems(12).Name = 'P12';
+elems(12).Dimensions = 1;
+elems(12).DimensionsMode = 'Fixed';
+elems(12).DataType = 'Bus: samplecontrol';
+elems(12).Complexity = 'real';
+elems(12).Min = [];
+elems(12).Max = [];
+elems(12).DocUnits = '';
+elems(12).Description = '';
+
+elems(13) = Simulink.BusElement;
+elems(13).Name = 'P13';
+elems(13).Dimensions = 1;
+elems(13).DimensionsMode = 'Fixed';
+elems(13).DataType = 'Bus: samplecontrol';
+elems(13).Complexity = 'real';
+elems(13).Min = [];
+elems(13).Max = [];
+elems(13).DocUnits = '';
+elems(13).Description = '';
+
+elems(14) = Simulink.BusElement;
+elems(14).Name = 'P14';
+elems(14).Dimensions = 1;
+elems(14).DimensionsMode = 'Fixed';
+elems(14).DataType = 'Bus: samplecontrol';
+elems(14).Complexity = 'real';
+elems(14).Min = [];
+elems(14).Max = [];
+elems(14).DocUnits = '';
+elems(14).Description = '';
+
+RX_BUSOFDM3 = Simulink.Bus;
+RX_BUSOFDM3.HeaderFile = '';
+RX_BUSOFDM3.Description = '';
+RX_BUSOFDM3.DataScope = 'Auto';
+RX_BUSOFDM3.Alignment = -1;
+RX_BUSOFDM3.PreserveElementDimensions = 0;
+RX_BUSOFDM3.Elements = elems;
+clear elems;
+assignin('base','RX_BUSOFDM3', RX_BUSOFDM3);
+
+% Bus object: RX_BUSOFDM4 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'P1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'P2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'P3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'P4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'P5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'P6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'P7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'P8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+elems(9) = Simulink.BusElement;
+elems(9).Name = 'P9';
+elems(9).Dimensions = 1;
+elems(9).DimensionsMode = 'Fixed';
+elems(9).DataType = 'Bus: samplecontrol';
+elems(9).Complexity = 'real';
+elems(9).Min = [];
+elems(9).Max = [];
+elems(9).DocUnits = '';
+elems(9).Description = '';
+
+elems(10) = Simulink.BusElement;
+elems(10).Name = 'P10';
+elems(10).Dimensions = 1;
+elems(10).DimensionsMode = 'Fixed';
+elems(10).DataType = 'Bus: samplecontrol';
+elems(10).Complexity = 'real';
+elems(10).Min = [];
+elems(10).Max = [];
+elems(10).DocUnits = '';
+elems(10).Description = '';
+
+elems(11) = Simulink.BusElement;
+elems(11).Name = 'P11';
+elems(11).Dimensions = 1;
+elems(11).DimensionsMode = 'Fixed';
+elems(11).DataType = 'Bus: samplecontrol';
+elems(11).Complexity = 'real';
+elems(11).Min = [];
+elems(11).Max = [];
+elems(11).DocUnits = '';
+elems(11).Description = '';
+
+elems(12) = Simulink.BusElement;
+elems(12).Name = 'P12';
+elems(12).Dimensions = 1;
+elems(12).DimensionsMode = 'Fixed';
+elems(12).DataType = 'Bus: samplecontrol';
+elems(12).Complexity = 'real';
+elems(12).Min = [];
+elems(12).Max = [];
+elems(12).DocUnits = '';
+elems(12).Description = '';
+
+elems(13) = Simulink.BusElement;
+elems(13).Name = 'P13';
+elems(13).Dimensions = 1;
+elems(13).DimensionsMode = 'Fixed';
+elems(13).DataType = 'Bus: samplecontrol';
+elems(13).Complexity = 'real';
+elems(13).Min = [];
+elems(13).Max = [];
+elems(13).DocUnits = '';
+elems(13).Description = '';
+
+elems(14) = Simulink.BusElement;
+elems(14).Name = 'P14';
+elems(14).Dimensions = 1;
+elems(14).DimensionsMode = 'Fixed';
+elems(14).DataType = 'Bus: samplecontrol';
+elems(14).Complexity = 'real';
+elems(14).Min = [];
+elems(14).Max = [];
+elems(14).DocUnits = '';
+elems(14).Description = '';
+
+RX_BUSOFDM4 = Simulink.Bus;
+RX_BUSOFDM4.HeaderFile = '';
+RX_BUSOFDM4.Description = '';
+RX_BUSOFDM4.DataScope = 'Auto';
+RX_BUSOFDM4.Alignment = -1;
+RX_BUSOFDM4.PreserveElementDimensions = 0;
+RX_BUSOFDM4.Elements = elems;
+clear elems;
+assignin('base','RX_BUSOFDM4', RX_BUSOFDM4);
+
+% Bus object: RX_BUSOFDM5 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'P1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'P2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'P3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'P4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'P5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'P6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'P7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'P8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+elems(9) = Simulink.BusElement;
+elems(9).Name = 'P9';
+elems(9).Dimensions = 1;
+elems(9).DimensionsMode = 'Fixed';
+elems(9).DataType = 'Bus: samplecontrol';
+elems(9).Complexity = 'real';
+elems(9).Min = [];
+elems(9).Max = [];
+elems(9).DocUnits = '';
+elems(9).Description = '';
+
+elems(10) = Simulink.BusElement;
+elems(10).Name = 'P10';
+elems(10).Dimensions = 1;
+elems(10).DimensionsMode = 'Fixed';
+elems(10).DataType = 'Bus: samplecontrol';
+elems(10).Complexity = 'real';
+elems(10).Min = [];
+elems(10).Max = [];
+elems(10).DocUnits = '';
+elems(10).Description = '';
+
+elems(11) = Simulink.BusElement;
+elems(11).Name = 'P11';
+elems(11).Dimensions = 1;
+elems(11).DimensionsMode = 'Fixed';
+elems(11).DataType = 'Bus: samplecontrol';
+elems(11).Complexity = 'real';
+elems(11).Min = [];
+elems(11).Max = [];
+elems(11).DocUnits = '';
+elems(11).Description = '';
+
+elems(12) = Simulink.BusElement;
+elems(12).Name = 'P12';
+elems(12).Dimensions = 1;
+elems(12).DimensionsMode = 'Fixed';
+elems(12).DataType = 'Bus: samplecontrol';
+elems(12).Complexity = 'real';
+elems(12).Min = [];
+elems(12).Max = [];
+elems(12).DocUnits = '';
+elems(12).Description = '';
+
+elems(13) = Simulink.BusElement;
+elems(13).Name = 'P13';
+elems(13).Dimensions = 1;
+elems(13).DimensionsMode = 'Fixed';
+elems(13).DataType = 'Bus: samplecontrol';
+elems(13).Complexity = 'real';
+elems(13).Min = [];
+elems(13).Max = [];
+elems(13).DocUnits = '';
+elems(13).Description = '';
+
+elems(14) = Simulink.BusElement;
+elems(14).Name = 'P14';
+elems(14).Dimensions = 1;
+elems(14).DimensionsMode = 'Fixed';
+elems(14).DataType = 'Bus: samplecontrol';
+elems(14).Complexity = 'real';
+elems(14).Min = [];
+elems(14).Max = [];
+elems(14).DocUnits = '';
+elems(14).Description = '';
+
+RX_BUSOFDM5 = Simulink.Bus;
+RX_BUSOFDM5.HeaderFile = '';
+RX_BUSOFDM5.Description = '';
+RX_BUSOFDM5.DataScope = 'Auto';
+RX_BUSOFDM5.Alignment = -1;
+RX_BUSOFDM5.PreserveElementDimensions = 0;
+RX_BUSOFDM5.Elements = elems;
+clear elems;
+assignin('base','RX_BUSOFDM5', RX_BUSOFDM5);
+
+% Bus object: RX_BUSOFDM6 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'P1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'P2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'P3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'P4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'P5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'P6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'P7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'P8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+elems(9) = Simulink.BusElement;
+elems(9).Name = 'P9';
+elems(9).Dimensions = 1;
+elems(9).DimensionsMode = 'Fixed';
+elems(9).DataType = 'Bus: samplecontrol';
+elems(9).Complexity = 'real';
+elems(9).Min = [];
+elems(9).Max = [];
+elems(9).DocUnits = '';
+elems(9).Description = '';
+
+elems(10) = Simulink.BusElement;
+elems(10).Name = 'P10';
+elems(10).Dimensions = 1;
+elems(10).DimensionsMode = 'Fixed';
+elems(10).DataType = 'Bus: samplecontrol';
+elems(10).Complexity = 'real';
+elems(10).Min = [];
+elems(10).Max = [];
+elems(10).DocUnits = '';
+elems(10).Description = '';
+
+elems(11) = Simulink.BusElement;
+elems(11).Name = 'P11';
+elems(11).Dimensions = 1;
+elems(11).DimensionsMode = 'Fixed';
+elems(11).DataType = 'Bus: samplecontrol';
+elems(11).Complexity = 'real';
+elems(11).Min = [];
+elems(11).Max = [];
+elems(11).DocUnits = '';
+elems(11).Description = '';
+
+elems(12) = Simulink.BusElement;
+elems(12).Name = 'P12';
+elems(12).Dimensions = 1;
+elems(12).DimensionsMode = 'Fixed';
+elems(12).DataType = 'Bus: samplecontrol';
+elems(12).Complexity = 'real';
+elems(12).Min = [];
+elems(12).Max = [];
+elems(12).DocUnits = '';
+elems(12).Description = '';
+
+elems(13) = Simulink.BusElement;
+elems(13).Name = 'P13';
+elems(13).Dimensions = 1;
+elems(13).DimensionsMode = 'Fixed';
+elems(13).DataType = 'Bus: samplecontrol';
+elems(13).Complexity = 'real';
+elems(13).Min = [];
+elems(13).Max = [];
+elems(13).DocUnits = '';
+elems(13).Description = '';
+
+elems(14) = Simulink.BusElement;
+elems(14).Name = 'P14';
+elems(14).Dimensions = 1;
+elems(14).DimensionsMode = 'Fixed';
+elems(14).DataType = 'Bus: samplecontrol';
+elems(14).Complexity = 'real';
+elems(14).Min = [];
+elems(14).Max = [];
+elems(14).DocUnits = '';
+elems(14).Description = '';
+
+RX_BUSOFDM6 = Simulink.Bus;
+RX_BUSOFDM6.HeaderFile = '';
+RX_BUSOFDM6.Description = '';
+RX_BUSOFDM6.DataScope = 'Auto';
+RX_BUSOFDM6.Alignment = -1;
+RX_BUSOFDM6.PreserveElementDimensions = 0;
+RX_BUSOFDM6.Elements = elems;
+clear elems;
+assignin('base','RX_BUSOFDM6', RX_BUSOFDM6);
+
+% Bus object: RX_BUSOFDM7 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'P1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'P2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'P3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'P4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'P5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'P6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'P7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'P8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+elems(9) = Simulink.BusElement;
+elems(9).Name = 'P9';
+elems(9).Dimensions = 1;
+elems(9).DimensionsMode = 'Fixed';
+elems(9).DataType = 'Bus: samplecontrol';
+elems(9).Complexity = 'real';
+elems(9).Min = [];
+elems(9).Max = [];
+elems(9).DocUnits = '';
+elems(9).Description = '';
+
+elems(10) = Simulink.BusElement;
+elems(10).Name = 'P10';
+elems(10).Dimensions = 1;
+elems(10).DimensionsMode = 'Fixed';
+elems(10).DataType = 'Bus: samplecontrol';
+elems(10).Complexity = 'real';
+elems(10).Min = [];
+elems(10).Max = [];
+elems(10).DocUnits = '';
+elems(10).Description = '';
+
+elems(11) = Simulink.BusElement;
+elems(11).Name = 'P11';
+elems(11).Dimensions = 1;
+elems(11).DimensionsMode = 'Fixed';
+elems(11).DataType = 'Bus: samplecontrol';
+elems(11).Complexity = 'real';
+elems(11).Min = [];
+elems(11).Max = [];
+elems(11).DocUnits = '';
+elems(11).Description = '';
+
+elems(12) = Simulink.BusElement;
+elems(12).Name = 'P12';
+elems(12).Dimensions = 1;
+elems(12).DimensionsMode = 'Fixed';
+elems(12).DataType = 'Bus: samplecontrol';
+elems(12).Complexity = 'real';
+elems(12).Min = [];
+elems(12).Max = [];
+elems(12).DocUnits = '';
+elems(12).Description = '';
+
+elems(13) = Simulink.BusElement;
+elems(13).Name = 'P13';
+elems(13).Dimensions = 1;
+elems(13).DimensionsMode = 'Fixed';
+elems(13).DataType = 'Bus: samplecontrol';
+elems(13).Complexity = 'real';
+elems(13).Min = [];
+elems(13).Max = [];
+elems(13).DocUnits = '';
+elems(13).Description = '';
+
+elems(14) = Simulink.BusElement;
+elems(14).Name = 'P14';
+elems(14).Dimensions = 1;
+elems(14).DimensionsMode = 'Fixed';
+elems(14).DataType = 'Bus: samplecontrol';
+elems(14).Complexity = 'real';
+elems(14).Min = [];
+elems(14).Max = [];
+elems(14).DocUnits = '';
+elems(14).Description = '';
+
+RX_BUSOFDM7 = Simulink.Bus;
+RX_BUSOFDM7.HeaderFile = '';
+RX_BUSOFDM7.Description = '';
+RX_BUSOFDM7.DataScope = 'Auto';
+RX_BUSOFDM7.Alignment = -1;
+RX_BUSOFDM7.PreserveElementDimensions = 0;
+RX_BUSOFDM7.Elements = elems;
+clear elems;
+assignin('base','RX_BUSOFDM7', RX_BUSOFDM7);
+
+% Bus object: RX_BUSOFDM8 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'P1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'P2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'P3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'P4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'P5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'P6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'P7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'P8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+elems(9) = Simulink.BusElement;
+elems(9).Name = 'P9';
+elems(9).Dimensions = 1;
+elems(9).DimensionsMode = 'Fixed';
+elems(9).DataType = 'Bus: samplecontrol';
+elems(9).Complexity = 'real';
+elems(9).Min = [];
+elems(9).Max = [];
+elems(9).DocUnits = '';
+elems(9).Description = '';
+
+elems(10) = Simulink.BusElement;
+elems(10).Name = 'P10';
+elems(10).Dimensions = 1;
+elems(10).DimensionsMode = 'Fixed';
+elems(10).DataType = 'Bus: samplecontrol';
+elems(10).Complexity = 'real';
+elems(10).Min = [];
+elems(10).Max = [];
+elems(10).DocUnits = '';
+elems(10).Description = '';
+
+elems(11) = Simulink.BusElement;
+elems(11).Name = 'P11';
+elems(11).Dimensions = 1;
+elems(11).DimensionsMode = 'Fixed';
+elems(11).DataType = 'Bus: samplecontrol';
+elems(11).Complexity = 'real';
+elems(11).Min = [];
+elems(11).Max = [];
+elems(11).DocUnits = '';
+elems(11).Description = '';
+
+elems(12) = Simulink.BusElement;
+elems(12).Name = 'P12';
+elems(12).Dimensions = 1;
+elems(12).DimensionsMode = 'Fixed';
+elems(12).DataType = 'Bus: samplecontrol';
+elems(12).Complexity = 'real';
+elems(12).Min = [];
+elems(12).Max = [];
+elems(12).DocUnits = '';
+elems(12).Description = '';
+
+elems(13) = Simulink.BusElement;
+elems(13).Name = 'P13';
+elems(13).Dimensions = 1;
+elems(13).DimensionsMode = 'Fixed';
+elems(13).DataType = 'Bus: samplecontrol';
+elems(13).Complexity = 'real';
+elems(13).Min = [];
+elems(13).Max = [];
+elems(13).DocUnits = '';
+elems(13).Description = '';
+
+elems(14) = Simulink.BusElement;
+elems(14).Name = 'P14';
+elems(14).Dimensions = 1;
+elems(14).DimensionsMode = 'Fixed';
+elems(14).DataType = 'Bus: samplecontrol';
+elems(14).Complexity = 'real';
+elems(14).Min = [];
+elems(14).Max = [];
+elems(14).DocUnits = '';
+elems(14).Description = '';
+
+RX_BUSOFDM8 = Simulink.Bus;
+RX_BUSOFDM8.HeaderFile = '';
+RX_BUSOFDM8.Description = '';
+RX_BUSOFDM8.DataScope = 'Auto';
+RX_BUSOFDM8.Alignment = -1;
+RX_BUSOFDM8.PreserveElementDimensions = 0;
+RX_BUSOFDM8.Elements = elems;
+clear elems;
+assignin('base','RX_BUSOFDM8', RX_BUSOFDM8);
+
+% Bus object: TX_control 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'L1';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'Bus: samplecontrol';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'L2';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'Bus: samplecontrol';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'L3';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'Bus: samplecontrol';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+elems(4) = Simulink.BusElement;
+elems(4).Name = 'L4';
+elems(4).Dimensions = 1;
+elems(4).DimensionsMode = 'Fixed';
+elems(4).DataType = 'Bus: samplecontrol';
+elems(4).Complexity = 'real';
+elems(4).Min = [];
+elems(4).Max = [];
+elems(4).DocUnits = '';
+elems(4).Description = '';
+
+elems(5) = Simulink.BusElement;
+elems(5).Name = 'L5';
+elems(5).Dimensions = 1;
+elems(5).DimensionsMode = 'Fixed';
+elems(5).DataType = 'Bus: samplecontrol';
+elems(5).Complexity = 'real';
+elems(5).Min = [];
+elems(5).Max = [];
+elems(5).DocUnits = '';
+elems(5).Description = '';
+
+elems(6) = Simulink.BusElement;
+elems(6).Name = 'L6';
+elems(6).Dimensions = 1;
+elems(6).DimensionsMode = 'Fixed';
+elems(6).DataType = 'Bus: samplecontrol';
+elems(6).Complexity = 'real';
+elems(6).Min = [];
+elems(6).Max = [];
+elems(6).DocUnits = '';
+elems(6).Description = '';
+
+elems(7) = Simulink.BusElement;
+elems(7).Name = 'L7';
+elems(7).Dimensions = 1;
+elems(7).DimensionsMode = 'Fixed';
+elems(7).DataType = 'Bus: samplecontrol';
+elems(7).Complexity = 'real';
+elems(7).Min = [];
+elems(7).Max = [];
+elems(7).DocUnits = '';
+elems(7).Description = '';
+
+elems(8) = Simulink.BusElement;
+elems(8).Name = 'L8';
+elems(8).Dimensions = 1;
+elems(8).DimensionsMode = 'Fixed';
+elems(8).DataType = 'Bus: samplecontrol';
+elems(8).Complexity = 'real';
+elems(8).Min = [];
+elems(8).Max = [];
+elems(8).DocUnits = '';
+elems(8).Description = '';
+
+TX_control = Simulink.Bus;
+TX_control.HeaderFile = '';
+TX_control.Description = '';
+TX_control.DataScope = 'Auto';
+TX_control.Alignment = -1;
+TX_control.PreserveElementDimensions = 0;
+TX_control.Elements = elems;
+clear elems;
+assignin('base','TX_control', TX_control);
+
+% Bus object: samplecontrol 
+clear elems;
+elems(1) = Simulink.BusElement;
+elems(1).Name = 'start';
+elems(1).Dimensions = 1;
+elems(1).DimensionsMode = 'Fixed';
+elems(1).DataType = 'boolean';
+elems(1).Complexity = 'real';
+elems(1).Min = [];
+elems(1).Max = [];
+elems(1).DocUnits = '';
+elems(1).Description = '';
+
+elems(2) = Simulink.BusElement;
+elems(2).Name = 'end';
+elems(2).Dimensions = 1;
+elems(2).DimensionsMode = 'Fixed';
+elems(2).DataType = 'boolean';
+elems(2).Complexity = 'real';
+elems(2).Min = [];
+elems(2).Max = [];
+elems(2).DocUnits = '';
+elems(2).Description = '';
+
+elems(3) = Simulink.BusElement;
+elems(3).Name = 'valid';
+elems(3).Dimensions = 1;
+elems(3).DimensionsMode = 'Fixed';
+elems(3).DataType = 'boolean';
+elems(3).Complexity = 'real';
+elems(3).Min = [];
+elems(3).Max = [];
+elems(3).DocUnits = '';
+elems(3).Description = '';
+
+samplecontrol = Simulink.Bus;
+samplecontrol.HeaderFile = '';
+samplecontrol.Description = '';
+samplecontrol.DataScope = 'Auto';
+samplecontrol.Alignment = -1;
+samplecontrol.PreserveElementDimensions = 0;
+samplecontrol.Elements = elems;
+clear elems;
+assignin('base','samplecontrol', samplecontrol);
+
